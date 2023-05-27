@@ -456,7 +456,7 @@ a {
 .features {
   margin-top: 77px;
   padding: 24px 0 57px;
-  background: var(--btn-color);
+  background: wheat;
 }
 
 .features .container {
