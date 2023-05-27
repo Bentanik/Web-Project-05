@@ -127,7 +127,7 @@ a {
   padding-top: 100px;
 }
 
-.hero .container{
+.hero .container {
   display: flex;
   align-items: center;
   gap: calc(120px + 163px);
@@ -323,7 +323,128 @@ a {
 }
 
 /* About ================*/
-.about{
+.about {
   margin-top: 77px;
-  
+  padding-top: 61px;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  gap: 223px;
+}
+
+.about-heading {
+  font-weight: 700;
+  font-size: 5.2rem;
+  line-height: 1.19;
+  color: #000958;
+}
+
+.about-desc {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: #656689;
+}
+
+.about-row {
+  margin-top: 57px;
+  display: flex;
+  align-items: center;
+  gap: 62px;
+}
+
+.about-row + .about-row {
+  margin-top: 37px;
+  gap: 36px;
+}
+
+.about-item {
+  display: flex;
+  align-items: center;
+}
+
+.about-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #ff5d31;
+  box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+  border-radius: 4px;
+}
+
+.about-name {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #48496a;
+}
+
+/* About images */
+.about-images {
+  position: relative;
+}
+
+.about-img {
+  display: block;
+  width: 450px;
+  height: 551px;
+  object-fit: cover;
+}
+
+.about-behind {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 494px;
+  height: 336px;
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+  border-radius: 16px;
+}
+
+.about-box {
+  position: absolute;
+  top: 165px;
+  left: -92px;
+  padding: 31px 26px 29px;
+  width: 136px;
+  height: 156px;
+  text-align: center;
+  background: #5bd6e2;
+  box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+  border-radius: 10px;
+}
+
+.about-box .number {
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.about-box .text {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.43;
+  color: #c6f4f9;
+}
+
+.about-box__img {
+  position: absolute;
+  top: -26%;
+  right: -25%;
+}
+
+.about-image__union {
+  position: absolute;
+  top: 149px;
+  left: 411px;
+  z-index: -2;
 }
