@@ -697,23 +697,18 @@ a {
   margin-top: 24px;
 }
 
+.service-card__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .service-card__heading {
   font-weight: 600;
   font-size: 2.2rem;
   line-height: 1;
   color: #000958;
   position: relative;
-}
-
-.service-card__heading::before {
-  position: absolute;
-  top: 0;
-  content: "";
-  display: inline-block;
-  width: 22px;
-  height: 0px;
-  transform: rotate(90deg);
-  background: #ff5b2e;
 }
 
 .service-card__desc {
@@ -892,4 +887,103 @@ a {
   min-width: 193px;
   border: 1px solid #ff5b2e;
   color: #ff5b2e;
+}
+
+/* Pricing ================*/
+.pricing {
+  margin-top: 130px;
+  padding: 86px 0;
+  background: var(--second-bg);
+}
+
+.pricing .container {
+  position: relative;
+}
+
+.pricing-heading {
+  font-weight: 700;
+  font-size: 5.2rem;
+  line-height: 1.19;
+  text-align: center;
+  color: #000958;
+}
+
+.pricing-desc {
+  margin: 24px auto 0;
+  max-width: 709px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  text-align: center;
+  color: #656689;
+}
+
+.pricing-body {
+  margin-top: 28px;
+  padding-top: 10px;
+}
+
+.pricing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-switch__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 276px;
+  height: 56px;
+  padding: 0 40px;
+  border: 1px solid rgba(255, 91, 46, 0.6);
+  border-radius: 99px;
+  user-select: none;
+  transform: translateX(0);
+}
+
+.pricing-switch__label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 140px;
+  height: 100%;
+  background: #ff5b2e;
+  border-radius: inherit;
+  transition: 0.25s;
+}
+
+.pricing-switch__value {
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #ffffff;
+}
+
+#pricing-switch__input:checked + .pricing-switch__label::before {
+  width: 131px;
+  transform: translateX(110%);
+}
+
+#pricing-switch__input:not(:checked)
+  + .pricing-switch__label
+  .pricing-switch__value:nth-child(2),
+#pricing-switch__input:checked
+  + .pricing-switch__label
+  .pricing-switch__value:nth-child(1) {
+  color: #ff5b2e;
+}
+
+.pricing-save {
+  position: absolute;
+  top: 174px;
+  left: 744px;
+  width: 86px;
+  height: 37px;
+  object-fit: cover;
 }
