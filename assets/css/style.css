@@ -6,6 +6,7 @@
   --main-color: #000958;
   --main-bg: #e5e5e5;
   --btn-color: #ff5b2e;
+  --second-bg: #fff6ed;
 }
 
 html {
@@ -46,6 +47,7 @@ a {
 }
 
 .container {
+  max-width: calc(100% -48px);
   width: 1169px;
   margin: 0 auto;
 }
@@ -465,6 +467,8 @@ a {
   gap: calc(85px + 42px);
 }
 
+/* Feature images */
+
 .feature-images {
   position: relative;
   flex-shrink: 0;
@@ -647,4 +651,245 @@ a {
   width: 86px;
   height: 0px;
   border: 1.5px solid #ff5d31;
+}
+
+/* Services ================*/
+.services {
+  margin-top: 130px;
+  padding: 68px 0 100px;
+  background: var(--second-bg);
+}
+
+.service-title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: center;
+  color: #5e6085;
+}
+
+.service-heading {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 5.2rem;
+  line-height: 1.19;
+  text-align: center;
+  color: #000958;
+}
+
+.service-body {
+  margin-top: 31px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 70px;
+}
+
+.service-card {
+  width: 294px;
+  height: 208px;
+  padding: 30px 22px 30px 28px;
+  background: #ffffff;
+  border: 2px solid rgba(255, 188, 122, 0.26);
+  border-radius: 10px;
+}
+
+.service-card + .service-card {
+  margin-top: 24px;
+}
+
+.service-card__heading {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: #000958;
+  position: relative;
+}
+
+.service-card__heading::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 0px;
+  transform: rotate(90deg);
+  background: #ff5b2e;
+}
+
+.service-card__desc {
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  color: #656689;
+}
+
+.service-row {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.service-more {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #34396a;
+}
+
+/* Service images */
+.service-image {
+  margin-top: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.service-image::after {
+  position: absolute;
+  top: 243px;
+  left: 22px;
+  z-index: -1;
+  content: "";
+  display: inline-block;
+  width: 410px;
+  height: 350px;
+  background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+  border-radius: 10px;
+}
+
+.service-img {
+  display: block;
+  width: 100%;
+}
+
+.service-act {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.service-btn {
+  min-width: 214px;
+  color: #ff5b2e;
+  border: 1px solid #ff5b2e;
+}
+
+/* Team ================ */
+.team {
+  margin-top: 130px;
+  background: #00a7cc;
+}
+
+.team-title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: center;
+  color: #5e6085;
+}
+
+.team-heading {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 5.2rem;
+  line-height: 1.19;
+  text-align: center;
+  color: #000958;
+}
+
+.team-body {
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.team-item {
+  position: relative;
+}
+
+.team-images {
+  width: 234px;
+  height: 290px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 129.5px;
+}
+
+.team-behind {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  z-index: -1;
+  width: 234px;
+  height: 266px;
+  background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+  border-radius: 129.5px;
+}
+
+.team-item:nth-child(2) .team-behind {
+  background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+
+.team-item:nth-child(3) .team-behind {
+  background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+
+.team-item:nth-child(4) .team-behind {
+  background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.team-body .avatar-img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  display: block;
+}
+
+.team-rectangle {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.team-rectangle--bottom {
+  top: 176px;
+}
+
+.team-rectangle--top {
+  top: 19px;
+}
+
+.team-body .name-office {
+  margin-top: 29px;
+  text-align: center;
+}
+
+.team-body .position {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #656689;
+}
+
+.team-body .name {
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: #000958;
+}
+
+.team-act {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.team-btn {
+  min-width: 193px;
+  border: 1px solid #ff5b2e;
+  color: #ff5b2e;
 }
