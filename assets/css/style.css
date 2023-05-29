@@ -11,6 +11,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -63,6 +64,11 @@ a {
   text-align: center;
   color: #ffffff;
   border-radius: 31px;
+  transition: 0.35s;
+}
+
+.btn:hover {
+  box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.6);
 }
 
 /* Logo */
@@ -106,6 +112,10 @@ a {
   transition: 0.25s;
 }
 
+.header-nav .nav-link:hover {
+  color: #1334b7;
+}
+
 .header-nav .nav-link.active {
   font-weight: 600;
   color: var(--main-color);
@@ -121,6 +131,12 @@ a {
   line-height: 1;
   text-align: center;
   color: var(--main-color);
+  transition: 0.3s;
+}
+
+.header-nav__btn:hover {
+  background: var(--main-color);
+  color: #fff;
 }
 
 /* Hero ================*/
@@ -294,6 +310,11 @@ a {
   min-width: 189px;
   background: var(--btn-color);
   box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+  transition: 0.35s;
+}
+
+.hero-book .book-act:hover {
+  transform: translateY(-20%);
 }
 
 .hero-book .text {
@@ -636,6 +657,7 @@ a {
   line-height: 1;
   color: #ff5d31;
   position: relative;
+  transition: 0.35s;
 }
 
 .feature-btn::after {
@@ -647,6 +669,10 @@ a {
   width: 86px;
   height: 0px;
   border: 1.5px solid #ff5d31;
+}
+
+.feature-btn:hover {
+  opacity: 0.8;
 }
 
 /* Services ================*/
@@ -730,6 +756,10 @@ a {
   color: #34396a;
 }
 
+.service-more:hover {
+  text-decoration: underline;
+}
+
 /* Service images */
 .service-image {
   margin-top: 18px;
@@ -764,6 +794,7 @@ a {
   min-width: 214px;
   color: var(--btn-color);
   border: 1px solid var(--btn-color);
+  transition: 0.35s;
 }
 
 /* Team ================ */
@@ -1032,7 +1063,14 @@ a {
   min-width: 246px;
   border: 1px solid rgba(255, 91, 46, 0.6);
   color: var(--btn-color);
-  border-radius: 20px;
+  border-radius: 39px;
+  transition: 0.3s;
+}
+
+.pricing-card__btn:hover {
+  background: var(--btn-color);
+  border: var(--btn-color);
+  color: #ffffff;
 }
 
 .pricing-list__service {
@@ -1075,6 +1113,7 @@ a {
   height: 427px;
   border-radius: 137px;
   overflow: hidden;
+  user-select: none;
 }
 
 .review-image img {
@@ -1189,6 +1228,13 @@ a {
   height: 8px;
   border: 1px solid var(--btn-color);
   border-radius: 4px;
+}
+
+.review-nav .line {
+  width: 24px;
+  height: 8px;
+  background: var(--btn-color);
+  transition: 0.25s;
 }
 
 /* Our blog ================ */
@@ -1395,6 +1441,10 @@ a {
   border-radius: 50%;
 }
 
+.footer-follows .icon-item:hover {
+  opacity: 0.8;
+}
+
 .footer-follows .icon-img {
   width: 14px;
   height: 14px;
@@ -1443,4 +1493,8 @@ a {
   font-size: 1.4rem;
   line-height: 2;
   color: #656689;
+}
+
+.footer-nav__link:hover {
+  text-decoration: underline;
 }
